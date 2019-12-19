@@ -2,7 +2,7 @@
 """
 Created on Wed Nov  19 21:02:37 2019
 
-@author: S.B
+@author: Mysia
 """
 
 
@@ -57,7 +57,7 @@ x_and_y_train=np.concatenate([inputs,labels],axis=1)
 
 #Read the test chair
 chair_test=np.ones((1,16386),'float32')
-videoTest1='C:/Users/oem/Desktop/Documents/4.SINIF/Introduction to Deep Learning/HW3/test/image_0001.jpg'
+videoTest1='./test/image_0001.jpg'
 img=misc.imread(videoTest1,'L')
 img/=255
 img=cv2.resize(img,dsize=(128,128),interpolation=cv2.INTER_CUBIC)
@@ -65,7 +65,7 @@ chair_test[0,0:16384]=img.flatten()
 
 #Read the test laptop
 laptop_test=np.ones((1,16386),'float32')
-videoTest2='C:/Users/oem/Desktop/Documents/4.SINIF/Introduction to Deep Learning/HW3/test/image_0007.jpg'
+videoTest2='./test/image_0007.jpg'
 img=misc.imread(videoTest2,'L')
 img/=255
 img=cv2.resize(img,dsize=(128,128),interpolation=cv2.INTER_CUBIC)
@@ -73,7 +73,7 @@ laptop_test[0,0:16384]=img.flatten()
 
 #Read the test butterfly
 butterfly_test=np.ones((1,16386),'float32')
-videoTest3='C:/Users/oem/Desktop/Documents/4.SINIF/Introduction to Deep Learning/HW3/test/image_0031.jpg'
+videoTest3='./test/image_0031.jpg'
 img=misc.imread(videoTest3,'L')
 img/=255
 img=cv2.resize(img,dsize=(128,128),interpolation=cv2.INTER_CUBIC)
