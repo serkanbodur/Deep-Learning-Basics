@@ -5,7 +5,7 @@ Every repository including the PDF. These PDFs explain the problem and give the 
 
 HW1-->Basic image movings such as rotate,flipping,downscale
 
-HW2-->Make a percepteron algorithm
+HW2-->Make a Perceptron algorithm
 
 HW3-->Make a KNN algorithm
 
